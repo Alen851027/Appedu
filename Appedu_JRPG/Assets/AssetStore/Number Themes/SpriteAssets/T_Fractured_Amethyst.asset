@@ -1,0 +1,276 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &-2328426502489386429
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: TextMeshPro/Sprite
+  m_Shader: {fileID: 4800000, guid: cf81c85f95fe47e1a27f6ae460cf182c, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 75ab5cf3471489746b5ea70ccc1f56f7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _ColorMask: 15
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors:
+    - _ClipRect: {r: -32767, g: -32767, b: 32767, a: 32767}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84a92b25f83d49b9bc132d206b370281, type: 3}
+  m_Name: T_Fractured_Amethyst
+  m_EditorClassIdentifier: 
+  hashCode: -401458181
+  material: {fileID: -2328426502489386429}
+  materialHashCode: 0
+  m_Version: 1.1.0
+  spriteSheet: {fileID: 2800000, guid: 75ab5cf3471489746b5ea70ccc1f56f7, type: 3}
+  m_SpriteCharacterTable:
+  - m_ElementType: 2
+    m_Unicode: 0
+    m_GlyphIndex: 0
+    m_Scale: 1
+    m_Name: T_Fractured_Amethyst_0
+    m_HashCode: 898702260
+  - m_ElementType: 2
+    m_Unicode: 0
+    m_GlyphIndex: 1
+    m_Scale: 1
+    m_Name: T_Fractured_Amethyst_1
+    m_HashCode: 898702261
+  - m_ElementType: 2
+    m_Unicode: 0
+    m_GlyphIndex: 2
+    m_Scale: 1
+    m_Name: T_Fractured_Amethyst_2
+    m_HashCode: 898702262
+  - m_ElementType: 2
+    m_Unicode: 0
+    m_GlyphIndex: 3
+    m_Scale: 1
+    m_Name: T_Fractured_Amethyst_3
+    m_HashCode: 898702263
+  - m_ElementType: 2
+    m_Unicode: 0
+    m_GlyphIndex: 4
+    m_Scale: 1
+    m_Name: T_Fractured_Amethyst_4
+    m_HashCode: 898702256
+  - m_ElementType: 2
+    m_Unicode: 0
+    m_GlyphIndex: 5
+    m_Scale: 1
+    m_Name: T_Fractured_Amethyst_5
+    m_HashCode: 898702257
+  - m_ElementType: 2
+    m_Unicode: 0
+    m_GlyphIndex: 6
+    m_Scale: 1
+    m_Name: T_Fractured_Amethyst_6
+    m_HashCode: 898702258
+  - m_ElementType: 2
+    m_Unicode: 0
+    m_GlyphIndex: 7
+    m_Scale: 1
+    m_Name: T_Fractured_Amethyst_7
+    m_HashCode: 898702259
+  - m_ElementType: 2
+    m_Unicode: 0
+    m_GlyphIndex: 8
+    m_Scale: 1
+    m_Name: T_Fractured_Amethyst_8
+    m_HashCode: 898702268
+  - m_ElementType: 2
+    m_Unicode: 0
+    m_GlyphIndex: 9
+    m_Scale: 1
+    m_Name: T_Fractured_Amethyst_9
+    m_HashCode: 898702269
+  m_SpriteGlyphTable:
+  - m_Index: 0
+    m_Metrics:
+      m_Width: 68
+      m_Height: 104
+      m_HorizontalBearingX: -3
+      m_HorizontalBearingY: 90
+      m_HorizontalAdvance: 68
+    m_GlyphRect:
+      m_X: 12
+      m_Y: 0
+      m_Width: 68
+      m_Height: 104
+    m_Scale: 1.1
+    m_AtlasIndex: 0
+    sprite: {fileID: -4885092764039124309, guid: 75ab5cf3471489746b5ea70ccc1f56f7,
+      type: 3}
+  - m_Index: 1
+    m_Metrics:
+      m_Width: 52
+      m_Height: 104
+      m_HorizontalBearingX: -3
+      m_HorizontalBearingY: 90
+      m_HorizontalAdvance: 52
+    m_GlyphRect:
+      m_X: 92
+      m_Y: 0
+      m_Width: 52
+      m_Height: 104
+    m_Scale: 1.1
+    m_AtlasIndex: 0
+    sprite: {fileID: 8119754318674980, guid: 75ab5cf3471489746b5ea70ccc1f56f7, type: 3}
+  - m_Index: 2
+    m_Metrics:
+      m_Width: 73
+      m_Height: 104
+      m_HorizontalBearingX: -3
+      m_HorizontalBearingY: 90
+      m_HorizontalAdvance: 73
+    m_GlyphRect:
+      m_X: 160
+      m_Y: 0
+      m_Width: 73
+      m_Height: 104
+    m_Scale: 1.1
+    m_AtlasIndex: 0
+    sprite: {fileID: 8289073256459254067, guid: 75ab5cf3471489746b5ea70ccc1f56f7,
+      type: 3}
+  - m_Index: 3
+    m_Metrics:
+      m_Width: 72
+      m_Height: 104
+      m_HorizontalBearingX: -3
+      m_HorizontalBearingY: 90
+      m_HorizontalAdvance: 72
+    m_GlyphRect:
+      m_X: 245
+      m_Y: 0
+      m_Width: 72
+      m_Height: 104
+    m_Scale: 1.1
+    m_AtlasIndex: 0
+    sprite: {fileID: 5688194912793360273, guid: 75ab5cf3471489746b5ea70ccc1f56f7,
+      type: 3}
+  - m_Index: 4
+    m_Metrics:
+      m_Width: 78
+      m_Height: 104
+      m_HorizontalBearingX: -3
+      m_HorizontalBearingY: 90
+      m_HorizontalAdvance: 78
+    m_GlyphRect:
+      m_X: 328
+      m_Y: 0
+      m_Width: 78
+      m_Height: 104
+    m_Scale: 1.1
+    m_AtlasIndex: 0
+    sprite: {fileID: 1724734270267061105, guid: 75ab5cf3471489746b5ea70ccc1f56f7,
+      type: 3}
+  - m_Index: 5
+    m_Metrics:
+      m_Width: 74
+      m_Height: 104
+      m_HorizontalBearingX: -3
+      m_HorizontalBearingY: 90
+      m_HorizontalAdvance: 74
+    m_GlyphRect:
+      m_X: 418
+      m_Y: 0
+      m_Width: 74
+      m_Height: 104
+    m_Scale: 1.1
+    m_AtlasIndex: 0
+    sprite: {fileID: -2220831610493344562, guid: 75ab5cf3471489746b5ea70ccc1f56f7,
+      type: 3}
+  - m_Index: 6
+    m_Metrics:
+      m_Width: 73
+      m_Height: 104
+      m_HorizontalBearingX: -3
+      m_HorizontalBearingY: 90
+      m_HorizontalAdvance: 73
+    m_GlyphRect:
+      m_X: 505
+      m_Y: 0
+      m_Width: 73
+      m_Height: 104
+    m_Scale: 1.1
+    m_AtlasIndex: 0
+    sprite: {fileID: -1491724004626396079, guid: 75ab5cf3471489746b5ea70ccc1f56f7,
+      type: 3}
+  - m_Index: 7
+    m_Metrics:
+      m_Width: 65
+      m_Height: 104
+      m_HorizontalBearingX: -3
+      m_HorizontalBearingY: 90
+      m_HorizontalAdvance: 65
+    m_GlyphRect:
+      m_X: 590
+      m_Y: 0
+      m_Width: 65
+      m_Height: 104
+    m_Scale: 1.1
+    m_AtlasIndex: 0
+    sprite: {fileID: -5654788030705758350, guid: 75ab5cf3471489746b5ea70ccc1f56f7,
+      type: 3}
+  - m_Index: 8
+    m_Metrics:
+      m_Width: 75
+      m_Height: 104
+      m_HorizontalBearingX: -3
+      m_HorizontalBearingY: 90
+      m_HorizontalAdvance: 75
+    m_GlyphRect:
+      m_X: 666
+      m_Y: 0
+      m_Width: 75
+      m_Height: 104
+    m_Scale: 1.1
+    m_AtlasIndex: 0
+    sprite: {fileID: 3751537826702122327, guid: 75ab5cf3471489746b5ea70ccc1f56f7,
+      type: 3}
+  - m_Index: 9
+    m_Metrics:
+      m_Width: 75
+      m_Height: 104
+      m_HorizontalBearingX: -3
+      m_HorizontalBearingY: 90
+      m_HorizontalAdvance: 75
+    m_GlyphRect:
+      m_X: 748
+      m_Y: 0
+      m_Width: 75
+      m_Height: 104
+    m_Scale: 1.1
+    m_AtlasIndex: 0
+    sprite: {fileID: -3862837291967908082, guid: 75ab5cf3471489746b5ea70ccc1f56f7,
+      type: 3}
+  spriteInfoList: []
+  fallbackSpriteAssets: []
