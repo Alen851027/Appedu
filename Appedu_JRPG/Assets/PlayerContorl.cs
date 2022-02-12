@@ -11,17 +11,31 @@ public class PlayerContorl : MonoBehaviour
     int VelocityHash;
     int VelocutyX;
     public float LRvelocity;
+
+    [SerializeField]
+    private Camera _followCamera;
+
+    private Vector3 _playerVelocity;
+    private bool _groundedPlayer;
+    private float playerSpeed = 2f;
+    private float jumpHeight = 1f;
+    private float _gravityValue = -9.8f;
+
+    private float PlayerSpeed = 5f;
+    private CharacterController _controller;
     // Start is called before the first frame update
     void Start()
     {
         VelocutyX = Animator.StringToHash("VelocityX"); 
         VelocityHash = Animator.StringToHash("Velocity");
+        _controller = GetComponent<CharacterController>();
     }
 
     // Update is called once per frame
     void Update()
     {
         PlayerAnimatorControl();
+        Movement();
     }
     public void PlayerAnimatorControl() 
     {
@@ -113,5 +127,33 @@ public class PlayerContorl : MonoBehaviour
         #endregion
         animator.SetFloat(VelocutyX, LRvelocity);
         animator.SetFloat(VelocityHash, velocity);
+    }
+
+    public void Movement() 
+    {
+        _groundedPlayer = _controller.isGrounded;
+        if (_groundedPlayer && _playerVelocity.y < 0)
+        {
+            _playerVelocity.y = 0f;
+        }
+
+        float horizontalInput = Input.GetAxis("Horizontal");
+        float verticalInput = Input.GetAxis("Vertical");
+
+        Vector3 movementInput = Quaternion.Euler(0,_followCamera.transform.eulerAngles.y,0)* new Vector3(horizontalInput, 0, verticalInput);
+        Vector3 movementDirection = movementInput.normalized;
+        _controller.Move(movementDirection * PlayerSpeed * Time.deltaTime);
+        if (movementDirection != Vector3.zero)
+        {
+            Quaternion desiredRotation = Quaternion.LookRotation(movementDirection,Vector3.up);
+            transform.rotation = Quaternion.Slerp(transform.rotation,desiredRotation,10f*Time.deltaTime);
+        }
+
+        if (Input.GetButtonDown("Jump") && _groundedPlayer)
+        {
+            _playerVelocity.y = Mathf.Sqrt(jumpHeight * -3.0f * _gravityValue);
+        }
+        _playerVelocity.y += _gravityValue * Time.deltaTime;
+        _controller.Move(_playerVelocity * Time.deltaTime);
     }
 }
