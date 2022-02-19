@@ -32,8 +32,17 @@ public class CameraControl : MonoBehaviour
     }
     IEnumerator WaitTheSecond() 
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.3f);
         tryPoistion = true;
+    }
+    private void Update()
+    {
+        if (Input.GetMouseButton(1))
+        {
+            StartCoroutine(WaitTheSecond());
+            RotationCameraWithMouse();
+            
+        }
     }
 
     private void LateUpdate()
@@ -42,12 +51,7 @@ public class CameraControl : MonoBehaviour
         var position1 = character.transform.position;
         cameraCenter.transform.position = new Vector3(position1.x, position1.y + yOffset, position1.z);
 
-        if (Input.GetMouseButton(1))
-        {
-            RotationCameraWithMouse();
-            StartCoroutine(WaitTheSecond());
-            
-        }
+
         if (Input.GetAxis("Mouse ScrollWheel") !=0)
         {
                 var scrollAmount = Input.GetAxis("Mouse ScrollWheel") * scrollSensitivity;
