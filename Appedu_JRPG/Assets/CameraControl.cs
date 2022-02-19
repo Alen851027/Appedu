@@ -17,15 +17,23 @@ public class CameraControl : MonoBehaviour
     public float zoomDistance;
     public float collisionSensitivity = 4.5f;
 
+    public bool tryPoistion = false;
+    
     private RaycastHit _camHit;
     private Vector3 _camDist;
     private Vector3 testV3;
+
     private void Start()
     {
         _camDist = cam.transform.localPosition;
         zoomDistance = zoomDefault;
         _camDist.z = zoomDistance;
         Cursor.visible = false;
+    }
+    IEnumerator WaitTheSecond() 
+    {
+        yield return new WaitForSeconds(1f);
+        tryPoistion = true;
     }
 
     private void LateUpdate()
@@ -34,10 +42,11 @@ public class CameraControl : MonoBehaviour
         var position1 = character.transform.position;
         cameraCenter.transform.position = new Vector3(position1.x, position1.y + yOffset, position1.z);
 
-
         if (Input.GetMouseButton(1))
         {
             RotationCameraWithMouse();
+            StartCoroutine(WaitTheSecond());
+            
         }
         if (Input.GetAxis("Mouse ScrollWheel") !=0)
         {
@@ -152,8 +161,19 @@ public class CameraControl : MonoBehaviour
 
         //      // Apply calculated camera position
         var transform2 = cam.transform;
-        transform2.localPosition = _camDist;
 
+        //if (Input.GetKey(KeyCode.Y))
+        //{
+
+        //    transform2.position = cam.transform.position;
+        //}
+        
+        if (tryPoistion == true)
+        {
+            transform2.localPosition = _camDist;
+            tryPoistion = true;
+        }
+        transform2.position = cam.transform.position;
         //      // Check and handle Collision
         GameObject obj = new GameObject();
         obj.transform.SetParent(transform2.parent);
@@ -182,5 +202,6 @@ public class CameraControl : MonoBehaviour
             cam.transform.localPosition =
                 new Vector3(cam.transform.localPosition.x, cam.transform.localPosition.y, -1f);
         }
+        
     }
 }

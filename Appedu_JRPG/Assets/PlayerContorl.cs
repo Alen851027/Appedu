@@ -16,7 +16,7 @@ public class PlayerContorl : MonoBehaviour
     private Camera _followCamera;
 
     private Vector3 _playerVelocity;
-    private bool _groundedPlayer;
+    public bool _groundedPlayer;
     private float playerSpeed = 2f;
     private float jumpHeight = 1f;
     private float _gravityValue = -9.8f;
@@ -39,24 +39,12 @@ public class PlayerContorl : MonoBehaviour
     }
     public void PlayerAnimatorControl() 
     {
-        bool forwardPressed = Input.GetKey(KeyCode.W);
-        bool LeftPresserd = Input.GetKey(KeyCode.D);
-        bool RightPressed = Input.GetKey(KeyCode.A);
+        bool MoveInput = Input.GetKey(KeyCode.W)|| Input.GetKey(KeyCode.A)||Input.GetKey(KeyCode.S)|| Input.GetKey(KeyCode.D);
 
-        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)|| Input.GetKey(KeyCode.S)|| Input.GetKey(KeyCode.W))
         {
             Debug.Log("A");
             animator.SetInteger("Move", 1);//左右移動 = 1
-        }
-        else if (Input.GetKey(KeyCode.W))
-        {
-            animator.SetInteger("Move", 2); //向前 =2
-        }
-        else if (Input.GetKey(KeyCode.S))
-        {
-            animator.SetInteger("Move", 3); //後退 =3
-            animator.SetBool("Back", true);
-            Debug.Log("SSSS");
         }
         else
         {
@@ -64,20 +52,20 @@ public class PlayerContorl : MonoBehaviour
             animator.SetBool("Back", false);
         }
 
-        #region 向前移動
+        #region 移動
         {
-            if (forwardPressed && velocity < 1.0f)
+            if (MoveInput && velocity < 1.0f)
             {
                 animator.SetBool("IsWalk", true);
                 Debug.Log("WWWWW");
                 velocity += Time.deltaTime * acceleration;
             }
-            if (!forwardPressed && velocity > 0.0f)
+            if (!MoveInput && velocity > 0.0f)
             {
 
                 velocity -= Time.deltaTime * deceleration;
             }
-            if (!forwardPressed && velocity < 0.0f)
+            if (!MoveInput && velocity < 0.0f)
             {
                 animator.SetBool("IsWalk", false);
                 velocity = 0.0f;
@@ -85,53 +73,14 @@ public class PlayerContorl : MonoBehaviour
         }
         #endregion
         //-------------------------------------------------
-        #region 左右移動
-        if (RightPressed && !LeftPresserd)
-        {
-            LRvelocity -= Time.deltaTime * acceleration*5;
-            if (LRvelocity < -1f)
-            {
-                LRvelocity = -1f;
-                Debug.Log("AA");
-            }
-        }
-        else if (!RightPressed && LeftPresserd)
-        {
-            LRvelocity += Time.deltaTime * acceleration*5;
-            if (LRvelocity > 1f)
-            {
-                LRvelocity = 1f;
-                Debug.Log("DD");
-            }
-        }
-        else if (!RightPressed && !LeftPresserd && LRvelocity < -0.1f)
-        {
-            LRvelocity += Time.deltaTime * acceleration*3;
-            if (LRvelocity > -0.1f)
-            {
-                LRvelocity = 0f;
-            }
-        }
-        else if (!RightPressed && !LeftPresserd && LRvelocity > 0.1f)
-        {
-            LRvelocity -= Time.deltaTime * acceleration*3;
-            if (LRvelocity < 0.1f)
-            {
-                LRvelocity = 0f;
-            }
-        }
-        //else
-        //{
-        //    LRvelocity = 0f;
-        //}
-        #endregion
-        animator.SetFloat(VelocutyX, LRvelocity);
+        //
+        //animator.SetFloat(VelocutyX, LRvelocity);
         animator.SetFloat(VelocityHash, velocity);
     }
 
     public void Movement() 
     {
-        _groundedPlayer = _controller.isGrounded;
+        _groundedPlayer = true;
         if (_groundedPlayer && _playerVelocity.y < 0)
         {
             _playerVelocity.y = 0f;
@@ -149,9 +98,10 @@ public class PlayerContorl : MonoBehaviour
             transform.rotation = Quaternion.Slerp(transform.rotation,desiredRotation,10f*Time.deltaTime);
         }
 
-        if (Input.GetButtonDown("Jump") && _groundedPlayer)
+        if (Input.GetButton("Jump") && _groundedPlayer)
         {
             _playerVelocity.y = Mathf.Sqrt(jumpHeight * -3.0f * _gravityValue);
+            _groundedPlayer = false;
         }
         _playerVelocity.y += _gravityValue * Time.deltaTime;
         _controller.Move(_playerVelocity * Time.deltaTime);

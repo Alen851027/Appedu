@@ -420,6 +420,7 @@ MonoBehaviour:
   zoomDefault: 7
   zoomDistance: 0
   collisionSensitivity: 4.5
+  tryPoistion: 0
 --- !u!1 &1163750684
 GameObject:
   m_ObjectHideFlags: 0
@@ -2423,7 +2424,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5695929746761906087
 Transform:
   m_ObjectHideFlags: 0
@@ -3315,6 +3316,7 @@ MonoBehaviour:
   deceleration: 0.5
   LRvelocity: 0
   _followCamera: {fileID: 1094132395}
+  _groundedPlayer: 0
 --- !u!143 &8028621461814844429
 CharacterController:
   m_ObjectHideFlags: 0
