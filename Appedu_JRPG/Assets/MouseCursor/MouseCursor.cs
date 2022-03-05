@@ -12,9 +12,13 @@ public class MouseCursor : MonoBehaviour
     }
     #endregion
     [SerializeField] GameObject MouseTrailObj;
+    [SerializeField] List<Texture2D> MouseIcon;
+    [SerializeField] Camera MainCamera;
+    private float distanceFromCamera = 1;
     private float StartMT = 0.15f;
     private float EndMT;
-    private float trailTime;
+    private float trailTime=0.15f;
+
     Transform trailTransform;
     // Start is called before the first frame update
     void Start()
@@ -25,7 +29,8 @@ public class MouseCursor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        MouseTrailToCursor(Input.mousePosition);
+        ChangeMouseIcon();
     }
     void MouseTrail() //創造滑鼠軌跡線
     {
@@ -47,5 +52,21 @@ public class MouseCursor : MonoBehaviour
         , new GradientAlphaKey[] { new GradientAlphaKey(alpha, 0.75f), new GradientAlphaKey(alpha, 0.5f) });  //設置 顏色A與顏色B
         trail.colorGradient = trailGradient; //將轉好的顏色 放到Trail上
 
+    }
+    public void MouseTrailToCursor(Vector3 screenPosition)
+    {
+        trailTransform.position = MainCamera.ScreenToWorldPoint(new Vector3(screenPosition.x, screenPosition.y, distanceFromCamera)); //座標轉換
+        //物件座標 = 相機.螢幕到世界座標;
+    }
+    public void ChangeMouseIcon() 
+    {
+        if (Input.GetMouseButton(0))
+        {
+            Cursor.SetCursor(MouseIcon[0], Vector2.zero, CursorMode.Auto);
+        }
+        else
+        {
+            Cursor.SetCursor(MouseIcon[1], Vector2.zero, CursorMode.Auto);
+        }
     }
 }

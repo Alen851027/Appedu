@@ -441,6 +441,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MouseTrailObj: {fileID: 1472602354}
+  MouseIcon:
+  - {fileID: 2800000, guid: 193f1b1ad970a534d9eb5c39af5eb077, type: 3}
+  - {fileID: 2800000, guid: a4ced15e9f91ebb468222b50995f4640, type: 3}
+  MainCamera: {fileID: 1302137979}
 --- !u!1 &870223562
 GameObject:
   m_ObjectHideFlags: 0
