@@ -56,12 +56,12 @@ public class CameraControl : MonoBehaviour
         {
                 var scrollAmount = Input.GetAxis("Mouse ScrollWheel") * scrollSensitivity;
                 scrollAmount *= (zoomDistance * 0.8f);
-                zoomDistance += scrollAmount * -2f;
-                zoomDistance = Mathf.Clamp(zoomDistance, zoomMin, zoomMax);
+                //zoomDistance += scrollAmount * -2f;
+                //zoomDistance = Mathf.Clamp(zoomDistance, zoomMin, zoomMax);
             
 
             // ReSharper disable once CompareOfFloatsByEqualityOperator
-            if (_camDist.z != zoomDistance * -2f)
+            if (_camDist.z != zoomDistance * -1f)
             {
                 _camDist.z = Mathf.Lerp(_camDist.z, -zoomDistance, Time.deltaTime * scrollDampening);
             }
@@ -73,7 +73,7 @@ public class CameraControl : MonoBehaviour
             GameObject obj = new GameObject();
             obj.transform.SetParent(transform2.parent);
             var position = cam.transform.localPosition;
-            obj.transform.localPosition = new Vector3(position.x, position.y, position.z - collisionSensitivity);
+            obj.transform.localPosition = new Vector3(position.x, position.y+1, position.z - collisionSensitivity);
             //      /*
             //Linecast is an alternative to Raycast, using it to cast a ray between the CameraCenter 
             //and a point directly behind the camera (to smooth things, that's why there's an "obj"

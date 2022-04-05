@@ -5,7 +5,7 @@ using UnityEngine;
 public class CameraRotationRestriction : MonoBehaviour
 {
 
-    public float restrictionAngle = -50f;
+    public float restrictionAngle = -50;
 
     // Update is called once per frame
     void LateUpdate()
