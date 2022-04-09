@@ -32,16 +32,16 @@ public class CameraControl : MonoBehaviour
     }
     IEnumerator WaitTheSecond() 
     {
-        yield return new WaitForSeconds(0.3f);
+        yield return new WaitForSeconds(1f *Time.deltaTime);
         tryPoistion = true;
     }
-    private void Update()
+    private void FixedUpdate()
     {
         if (Input.GetMouseButton(1))
         {
-            StartCoroutine(WaitTheSecond());
             RotationCameraWithMouse();
-            
+            StartCoroutine(WaitTheSecond());
+
         }
     }
 
@@ -52,10 +52,10 @@ public class CameraControl : MonoBehaviour
         cameraCenter.transform.position = new Vector3(position1.x, position1.y + yOffset, position1.z);
 
 
-        if (Input.GetAxis("Mouse ScrollWheel") !=0)
+        //if (Input.GetAxis("Mouse ScrollWheel") !=0)
         {
-                var scrollAmount = Input.GetAxis("Mouse ScrollWheel") * scrollSensitivity;
-                scrollAmount *= (zoomDistance * 0.8f);
+                //var scrollAmount = Input.GetAxis("Mouse ScrollWheel") * scrollSensitivity;
+                //scrollAmount *= (zoomDistance * 0.8f);
                 //zoomDistance += scrollAmount * -2f;
                 //zoomDistance = Mathf.Clamp(zoomDistance, zoomMin, zoomMax);
             
@@ -129,7 +129,9 @@ public class CameraControl : MonoBehaviour
             //    cam.transform.localPosition =
             //        new Vector3(cam.transform.localPosition.x, cam.transform.localPosition.y, cam.transform.localPosition.z);
             //}
+
         }
+
     }
 
     public void RotationCameraWithMouse() 

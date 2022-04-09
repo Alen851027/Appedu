@@ -290,7 +290,8 @@ MonoBehaviour:
   btn: {fileID: 834625986}
   img: {fileID: 1465619195}
   cd: {fileID: 827617904}
-  cooldownTime: 1
+  cdText: {fileID: 827617900}
+  cooldownTime: 3
 --- !u!114 &834625986
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -8,6 +8,7 @@ public class TestSkillCD : MonoBehaviour
     public Button btn;
     public Image img;
     public Text cd;
+    public GameObject cdText;
     private bool isCoolDown = false;
     public float cooldownTime = 10f;
     private float cooldownTimer = 2f;
@@ -20,13 +21,23 @@ public class TestSkillCD : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void  Update()
     {
+
+
         btn.onClick.AddListener(() => Clicked());
         if (isCoolDown)
         {
+  
             ApplyCooldown();
         }
+
+
+        if (Input.GetKeyDown(KeyCode.Alpha1)) 
+        {
+            UseSpell();
+        }
+
     }
 
     void ApplyCooldown()
@@ -37,11 +48,15 @@ public class TestSkillCD : MonoBehaviour
             isCoolDown = false;
             cd.gameObject.SetActive(false);
             img.fillAmount = 0f;
+
+
         }
         else
         {
-            cd.text = Mathf.RoundToInt(cooldownTimer).ToString();
+            cd.text = Mathf.Round(cooldownTimer).ToString();
             img.fillAmount = cooldownTimer / cooldownTime;
+            cdText.SetActive(true);
+
         }
     }
 
@@ -56,12 +71,16 @@ public class TestSkillCD : MonoBehaviour
             isCoolDown = true;
             cd.gameObject.SetActive(true);
             cooldownTimer = cooldownTime;
+
             //return true;
         }
+
     }
 
     public void Clicked()
     {
 
+
+            
     }
 }

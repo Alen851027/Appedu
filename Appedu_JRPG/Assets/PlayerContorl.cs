@@ -32,7 +32,7 @@ public class PlayerContorl : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
         PlayerAnimatorControl();
         Movement();
