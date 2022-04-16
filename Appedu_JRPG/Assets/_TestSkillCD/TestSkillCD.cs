@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,20 +6,52 @@ using UnityEngine.UI;
 
 public class TestSkillCD : MonoBehaviour
 {
-    public Button btn;
-    public Image img;
-    public Text cd;
-    public GameObject cdText;
-    public KeyCode GetInputBtn;
-    private bool isCoolDown = false;
-    public float cooldownTime = 10f;
-    private float cooldownTimer = 2f;
+    //private float WaitTime;
+    //public Button btn;
+    //public Image img;
+    //public Text cd;
+    //public GameObject cdText;
+    //public KeyCode GetInputBtn;
+    //private bool isCoolDown = false;
+    //public float cooldownTime = 10f;
+    //private float cooldownTimer = 2f;
+
+    [SerializeField]
+    private List<SkillTemplate> skillTemplates;
+
+    //[SerializeField]
+    //private GameObject Btn7_GameObj;
+    //[SerializeField]
+    //private Button Btn7;
+
+    [System.Serializable]
+    public class SkillTemplate
+    {
+        public Text cd;
+        public GameObject cdText;
+        public Image img;
+        public KeyCode GetInputBtn;
+        public bool isCoolDown = false;
+        public float CooldownTime = 10f;
+        [HideInInspector]
+        public float CooldownTimer = 2f;
+        public float ShowTime;
+        public Button Skill;
+        public List<GameObject> SkillObjects;
+
+
+    }
 
     // Start is called before the first frame update
     void Start()
     {
-        cd.gameObject.SetActive(false);
-        img.fillAmount = 0f;
+        for (int i = 0; i < skillTemplates.Count; i++)
+        {
+           skillTemplates[i].cd.gameObject.SetActive(false);
+           skillTemplates[i].img.fillAmount = 0f;
+        }
+
+
     }
 
     // Update is called once per frame
@@ -26,54 +59,77 @@ public class TestSkillCD : MonoBehaviour
     {
 
 
-        btn.onClick.AddListener(() => Clicked());
-        if (isCoolDown)
+        //foreach (var i in skillTemplates)
+        //{
+        //   i.Skill.onClick.AddListener(() => Clicked_BTN(skillTemplates[i]));
+        //}
+        //btn.onClick.AddListener(() => Clicked());
+        for (int i = 0; i < skillTemplates.Count; i++)
         {
-  
-            ApplyCooldown();
-        }
+            if (skillTemplates[i].isCoolDown)
+            {
 
+                ApplyCooldown(i);
+            }
 
-        if (Input.GetKeyDown(GetInputBtn)) 
-        {
-            UseSpell();
+            if (Input.GetKeyDown(skillTemplates[i].GetInputBtn)) 
+            {
+                //StopAllCoroutines();
+                UseSpell(i);
+                Clicked_BTN(i);
+            }
+            
         }
+        ////Btn7.onClick.AddListener(() => Clicked_BTN7());
+        //for (int i = 0; i < skillTemplates.Count; i++)
+        //{
+            
+        //}
+        //skillTemplates[6].Skill.onClick.AddListener(() =>Clicked_BTN7());
 
     }
 
-    void ApplyCooldown()
+    void ApplyCooldown(int x)
     {
-        cooldownTimer -= Time.deltaTime;
-        if (cooldownTimer < 0.0f)
+        //for (int i = 0; i < skillTemplates.Count; i++)
         {
-            isCoolDown = false;
-            cd.gameObject.SetActive(false);
-            img.fillAmount = 0f;
+
+            skillTemplates[x].CooldownTimer -= Time.deltaTime;
+            if (skillTemplates[x].CooldownTimer < 0.0f)
+            {
+                skillTemplates[x].isCoolDown = false;
+                skillTemplates[x].cd.gameObject.SetActive(false);
+                skillTemplates[x].img.fillAmount = 0f;
 
 
-        }
-        else
-        {
-            cd.text = Mathf.Round(cooldownTimer).ToString();
-            img.fillAmount = cooldownTimer / cooldownTime;
-            cdText.SetActive(true);
+            }
+            else
+            {
+                skillTemplates[x].cd.text = Mathf.Round(skillTemplates[x].CooldownTimer).ToString();
+                skillTemplates[x].img.fillAmount = skillTemplates[x].CooldownTimer/skillTemplates[x].CooldownTime;
+                skillTemplates[x].cdText.SetActive(true);
 
+            }
         }
     }
 
-    public void UseSpell()
+    public void UseSpell(int x)
     {
-        if (isCoolDown)
+        //for (int i = 0; i < skillTemplates.Count; i++)
         {
-            //return false;
-        }
-        else
-        {
-            isCoolDown = true;
-            cd.gameObject.SetActive(true);
-            cooldownTimer = cooldownTime;
+            if (skillTemplates[x].isCoolDown)
+            {
 
-            //return true;
+                //return false;
+            }
+            else
+            {
+                skillTemplates[x].isCoolDown = true;
+                skillTemplates[x].cd.gameObject.SetActive(true);
+                skillTemplates[x].CooldownTimer = skillTemplates[x].CooldownTime;
+
+                //return true;
+            }
         }
 
     }
@@ -84,4 +140,50 @@ public class TestSkillCD : MonoBehaviour
 
             
     }
+
+
+    IEnumerator Btn_Skill(int x) 
+    {
+        yield return new WaitForSeconds(skillTemplates[x].ShowTime);
+        //Btn7_GameObj.SetActive(false);
+        skillTemplates[x].SkillObjects[0].SetActive(false);
+        StopAllCoroutines();
+    }
+    public void Clicked_BTN(int x) 
+    {
+        Debug.LogWarning(x);
+        //StopCoroutine(Btn_Skill(x));
+        
+        switch (x)
+        {
+            case 0:
+                break;
+
+            case 1:
+
+                break;
+            case 2:
+
+                break;
+            case 3:
+
+                break;
+            case 4:
+
+                break;
+            case 5:
+
+                break;
+            case 6:
+                skillTemplates[x].SkillObjects[0].SetActive(true);
+
+                break;
+            default:
+                break;
+        }
+
+        //Btn7_GameObj.SetActive(true);
+        StartCoroutine(Btn_Skill(x));
+    }
+
 }
