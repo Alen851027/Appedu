@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MouseCursor : MonoBehaviour
 {
@@ -12,7 +13,7 @@ public class MouseCursor : MonoBehaviour
     }
     #endregion
     [SerializeField] GameObject MouseTrailObj;
-    [SerializeField] List<Texture2D> MouseIcon;
+    [SerializeField] List<Sprite> MouseIcon;
     [SerializeField] Camera MainCamera;
     private float distanceFromCamera = 1;
     private float StartMT = 0.15f;
@@ -29,7 +30,13 @@ public class MouseCursor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        MouseTrailToCursor(Input.mousePosition);
+
+
+        if (PlayerContorl.instance.isWalk == false)
+        { 
+            //MouseTrailToCursor(Input.mousePosition);
+
+        }
         ChangeMouseIcon();
     }
     void MouseTrail() //³Ð³y·Æ¹«­y¸ñ½u
@@ -62,11 +69,11 @@ public class MouseCursor : MonoBehaviour
     {
         if (Input.GetMouseButton(0))
         {
-            Cursor.SetCursor(MouseIcon[0], Vector2.zero, CursorMode.Auto);
+            Cursor.SetCursor(MouseIcon[0].texture, Vector2.zero, CursorMode.Auto);
         }
         else
         {
-            Cursor.SetCursor(MouseIcon[1], Vector2.zero, CursorMode.Auto);
+            Cursor.SetCursor(MouseIcon[1].texture, Vector2.zero, CursorMode.Auto);
         }
     }
 }

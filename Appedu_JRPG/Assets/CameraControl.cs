@@ -28,7 +28,7 @@ public class CameraControl : MonoBehaviour
         _camDist = cam.transform.localPosition;
         zoomDistance = zoomDefault;
         _camDist.z = zoomDistance;
-        Cursor.visible = false;
+        //Cursor.visible = false;
     }
     IEnumerator WaitTheSecond() 
     {

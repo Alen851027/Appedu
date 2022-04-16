@@ -1,0 +1,1010 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.25f1 (9b9180224418) revision 10195328'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10  (10.0.18363) 64bit Professional' Language: 'zh' Physical Memory: 16319 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.25f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/Appedu/Desktop/Alen/Appedu/Appedu_JRPG/UnityPackage/My project
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+65468
+Successfully changed project path to: C:/Users/Appedu/Desktop/Alen/Appedu/Appedu_JRPG/UnityPackage/My project
+C:/Users/Appedu/Desktop/Alen/Appedu/Appedu_JRPG/UnityPackage/My project
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 41.40 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.25f1 (9b9180224418)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.25f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Appedu/Desktop/Alen/Appedu/Appedu_JRPG/UnityPackage/My project/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA Quadro P620 (ID=0x1cb6)
+    Vendor:   
+    VRAM:     1977 MB
+    Driver:   30.0.14.7247
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.25f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.25f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.25f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56168
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.25f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.25f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002099 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 36.85 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.606 seconds
+Domain Reload Profiling:
+	ReloadAssembly (606ms)
+		BeginReloadAssembly (69ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (456ms)
+			LoadAssemblies (67ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (153ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (32ms)
+			SetupLoadedEditorAssemblies (166ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (37ms)
+				BeforeProcessingInitializeOnLoad (16ms)
+				ProcessInitializeOnLoadAttributes (79ms)
+				ProcessInitializeOnLoadMethodAttributes (28ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.005627 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.37 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.012 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1013ms)
+		BeginReloadAssembly (155ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (20ms)
+		EndReloadAssembly (797ms)
+			LoadAssemblies (87ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (283ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (298ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (76ms)
+				ProcessInitializeOnLoadAttributes (202ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.66 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1568 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 72.8 MB.
+System memory in use after: 72.9 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2002.
+Total: 7.857600 ms (FindLiveObjects: 0.862900 ms CreateObjectMapping: 0.098700 ms MarkObjects: 6.764100 ms  DeleteObjects: 0.129700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/KriptoFX/ArcherEffects/PC_Demo.unity
+  artifactKey: Guid(440fdd307d40cb8498c0e4971ad81a8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/PC_Demo.unity using Guid(440fdd307d40cb8498c0e4971ad81a8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '363f7bb9c9b9e57863561182939a276a') in 0.018114 seconds 
+  Import took 0.022106 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(f54d3ce06ba4fed42b9b8d55dbe6023a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(f54d3ce06ba4fed42b9b8d55dbe6023a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e14de0a7b6a2354e2e7fa757aea8d17') in 0.003934 seconds 
+  Import took 0.007857 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.695151 seconds.
+  path: Assets/KriptoFX/ArcherEffects/Prefabs/Effect7/ArrowEffect.prefab
+  artifactKey: Guid(94c18defcddb1b24d99b2abb4d46a284) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/Prefabs/Effect7/ArrowEffect.prefab using Guid(94c18defcddb1b24d99b2abb4d46a284) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c808139887017b159a07ef20d9e05b9') in 0.443072 seconds 
+  Import took 0.446930 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.621977 seconds.
+  path: Assets/KriptoFX/ArcherEffects/Prefabs/Effect7/CollisionEffect.prefab
+  artifactKey: Guid(cb4318925ab0f7441abf9f98962b76df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/Prefabs/Effect7/CollisionEffect.prefab using Guid(cb4318925ab0f7441abf9f98962b76df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7fb2df7116edb038f84efcf28c4414f') in 0.220761 seconds 
+  Import took 0.225701 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.059300 seconds.
+  path: Assets/KriptoFX/ArcherEffects/Prefabs/Effect7/ShotEffect.prefab
+  artifactKey: Guid(517ba164117be0b46a1674f7ff177fdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/Prefabs/Effect7/ShotEffect.prefab using Guid(517ba164117be0b46a1674f7ff177fdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0280bd1008825d03db41904a88ae9b87') in 0.327903 seconds 
+  Import took 0.331938 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.343433 seconds.
+  path: Assets/KriptoFX/ArcherEffects/Prefabs/Effect10/ArrowEffect.prefab
+  artifactKey: Guid(76b4212eba78bf242a4cf9bc725e6e7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/Prefabs/Effect10/ArrowEffect.prefab using Guid(76b4212eba78bf242a4cf9bc725e6e7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f43469a2a94d25c71f424eecd995c18a') in 0.111150 seconds 
+  Import took 0.114412 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.560734 seconds.
+  path: Assets/KriptoFX/ArcherEffects/Prefabs/Effect10/CollisionEffect.prefab
+  artifactKey: Guid(f95db8e9421905c4d82c7c37a11ebd6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/Prefabs/Effect10/CollisionEffect.prefab using Guid(f95db8e9421905c4d82c7c37a11ebd6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12468526c5d7d410a1a11e165b64950f') in 0.078022 seconds 
+  Import took 0.081580 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.259036 seconds.
+  path: Assets/KriptoFX/ArcherEffects/Prefabs/Effect10/ShotEffect.prefab
+  artifactKey: Guid(24754a283e09dec46b6d3b86a4a9d686) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/Prefabs/Effect10/ShotEffect.prefab using Guid(24754a283e09dec46b6d3b86a4a9d686) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bf930f1bd5b3b356915f08fe9b7a3bf') in 0.105757 seconds 
+  Import took 0.110196 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.197359 seconds.
+  path: Assets/KriptoFX/ArcherEffects/Prefabs/Effect11
+  artifactKey: Guid(ecd5390881e8d694dbbb780d67a15a8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/Prefabs/Effect11 using Guid(ecd5390881e8d694dbbb780d67a15a8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '097de1ec3abf2d9d536bf775cd29a19b') in 0.004541 seconds 
+  Import took 0.008200 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.724366 seconds.
+  path: Assets/KriptoFX/ArcherEffects/Prefabs/Effect10/BuffEffect.prefab
+  artifactKey: Guid(e34f6e305abe684499abcaec858aca56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/Prefabs/Effect10/BuffEffect.prefab using Guid(e34f6e305abe684499abcaec858aca56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc5c69b3e63dd5a32be7bffd673f7fdf') in 0.124395 seconds 
+  Import took 0.128458 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.809071 seconds.
+  path: Assets/KriptoFX/ArcherEffects/Materials/Effect10/ParticlesEnd.mat
+  artifactKey: Guid(3fb55318f71d4574ca95d7978bd14ec4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/Materials/Effect10/ParticlesEnd.mat using Guid(3fb55318f71d4574ca95d7978bd14ec4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7d1d63f2a283a7c780a83c9393c450b') in 0.044094 seconds 
+  Import took 0.047343 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.426252 seconds.
+  path: Assets/KriptoFX/ArcherEffects/Materials/Effect10/Distortion.mat
+  artifactKey: Guid(03d30182a163c8e4cb9025c5b356fa77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/Materials/Effect10/Distortion.mat using Guid(03d30182a163c8e4cb9025c5b356fa77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '137cb0b1c644f26456b4606c8796de52') in 0.013836 seconds 
+  Import took 0.016756 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004961 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.38 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.921 seconds
+Domain Reload Profiling:
+	ReloadAssembly (921ms)
+		BeginReloadAssembly (99ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (30ms)
+		EndReloadAssembly (764ms)
+			LoadAssemblies (82ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (277ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (281ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (69ms)
+				ProcessInitializeOnLoadAttributes (192ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1555 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.2 MB.
+System memory in use after: 89.1 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2052.
+Total: 3.048600 ms (FindLiveObjects: 0.127500 ms CreateObjectMapping: 0.049100 ms MarkObjects: 2.676800 ms  DeleteObjects: 0.194300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 322.277595 seconds.
+  path: Assets/AcquireChan/Scenes
+  artifactKey: Guid(a23be5f2d5a9e4f4ba8dcc531fcdcaf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AcquireChan/Scenes using Guid(a23be5f2d5a9e4f4ba8dcc531fcdcaf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0aa30f446fdcb9554d238686e9435da') in 0.006140 seconds 
+  Import took 0.009755 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.313765 seconds.
+  path: Assets/AcquireChan/Prefabs/AcquireChan_MotionView.prefab
+  artifactKey: Guid(897b401909e251b4ca8a0338a8e61657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AcquireChan/Prefabs/AcquireChan_MotionView.prefab using Guid(897b401909e251b4ca8a0338a8e61657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70f769f484247b831aa056e2d34bda33') in 0.100020 seconds 
+  Import took 0.104793 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005197 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.091 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1092ms)
+		BeginReloadAssembly (99ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (934ms)
+			LoadAssemblies (90ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (287ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (36ms)
+			SetupLoadedEditorAssemblies (401ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (83ms)
+				ProcessInitializeOnLoadAttributes (291ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.85 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1555 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.3 MB.
+System memory in use after: 89.4 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2059.
+Total: 3.931400 ms (FindLiveObjects: 0.205900 ms CreateObjectMapping: 0.090100 ms MarkObjects: 3.606500 ms  DeleteObjects: 0.027300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 828.697958 seconds.
+  path: Assets/ATART/Character/Wizard/Prefabs/Wizard.prefab
+  artifactKey: Guid(c46e2b1cb736446459b8b8807afa2d61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ATART/Character/Wizard/Prefabs/Wizard.prefab using Guid(c46e2b1cb736446459b8b8807afa2d61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22d3dba6bfcfde7e40838f67ad635c16') in 0.090158 seconds 
+  Import took 0.093162 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.407821 seconds.
+  path: Assets/ATART/Character/Archer/Prefabs/Archer.prefab
+  artifactKey: Guid(36d4c4b1ca6a466448feb6f234379adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ATART/Character/Archer/Prefabs/Archer.prefab using Guid(36d4c4b1ca6a466448feb6f234379adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f80f7d747726aa1b821305f0c8e304d6') in 0.027801 seconds 
+  Import took 0.032054 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.771974 seconds.
+  path: Assets/ATART/Character/Archer/Prefabs/Archer_Lit.prefab
+  artifactKey: Guid(4715f92631d124b4fab62a62e2ca9831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ATART/Character/Archer/Prefabs/Archer_Lit.prefab using Guid(4715f92631d124b4fab62a62e2ca9831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85494707e05b416c9701c85742db5e39') in 0.125486 seconds 
+  Import took 0.129448 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 77.798111 seconds.
+  path: Assets/KriptoFX/ArcherEffects/DemoResources/Models/Other/Arrows.FBX
+  artifactKey: Guid(d43b87d0d407652419658efa92f41352) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/DemoResources/Models/Other/Arrows.FBX using Guid(d43b87d0d407652419658efa92f41352) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '566cf0b43f42f16748f6c5058a84f307') in 0.316239 seconds 
+  Import took 0.319076 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000318 seconds.
+  path: Assets/KriptoFX/ArcherEffects/Model/Rift.FBX
+  artifactKey: Guid(3fed0c903e24eef45b3a738af7a3c5c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/Model/Rift.FBX using Guid(3fed0c903e24eef45b3a738af7a3c5c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ccde7d00aa557bb3b9256c7ec54b760') in 0.304772 seconds 
+  Import took 0.307122 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000366 seconds.
+  path: Assets/KriptoFX/ArcherEffects/DemoResources/Models/Scene/Barrack_Roof.asset
+  artifactKey: Guid(2e1878fbd9a24cb41a6d50d6a74a7cbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/DemoResources/Models/Scene/Barrack_Roof.asset using Guid(2e1878fbd9a24cb41a6d50d6a74a7cbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01b9de46ae4dcd39f6ee940d116432c9') in 0.026992 seconds 
+  Import took 0.029865 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000261 seconds.
+  path: Assets/KriptoFX/ArcherEffects/Model/Wings.FBX
+  artifactKey: Guid(56e4abdf62bcd054fa15a96c3314076c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/Model/Wings.FBX using Guid(56e4abdf62bcd054fa15a96c3314076c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a3425b4022ebe6a24b4d26a2e157a02') in 0.026505 seconds 
+  Import took 0.030014 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000383 seconds.
+  path: Assets/AcquireChan/Models/AcquireChan.fbx
+  artifactKey: Guid(50a0208afad970f42b91e82ff62fab00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AcquireChan/Models/AcquireChan.fbx using Guid(50a0208afad970f42b91e82ff62fab00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '827f90aaa5055936e3cdd4047de50d41') in 0.056954 seconds 
+  Import took 0.060987 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/KriptoFX/ArcherEffects/Model/Cylinder2.FBX
+  artifactKey: Guid(48abe685314e50d49ac8763c79008d0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/Model/Cylinder2.FBX using Guid(48abe685314e50d49ac8763c79008d0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4a20d2e52c098e180ccdd615f15677f') in 0.017605 seconds 
+  Import took 0.020633 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000343 seconds.
+  path: Assets/KriptoFX/ArcherEffects/DemoResources/Models/Scene/Barrack_pillars.asset
+  artifactKey: Guid(31d2ab3bd0b6f094db91d5414c04a868) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/DemoResources/Models/Scene/Barrack_pillars.asset using Guid(31d2ab3bd0b6f094db91d5414c04a868) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d7d91c5a1ff458f8e957de1f1bc17bc') in 0.020112 seconds 
+  Import took 0.023423 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/KriptoFX/ArcherEffects/DemoResources/Models/Scene/Fence_1.asset
+  artifactKey: Guid(cecdac5dddce9684fbb9d5b8ef63fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/DemoResources/Models/Scene/Fence_1.asset using Guid(cecdac5dddce9684fbb9d5b8ef63fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf2cf0dbc265c540758fdb4514cd4141') in 0.013931 seconds 
+  Import took 0.017561 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000248 seconds.
+  path: Assets/KriptoFX/ArcherEffects/DemoResources/Models/Scene/Crane1.asset
+  artifactKey: Guid(5c8794ac28961e5498c5a87d8dc10e89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/DemoResources/Models/Scene/Crane1.asset using Guid(5c8794ac28961e5498c5a87d8dc10e89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94a7477b12e092eb0216b51aa26b942d') in 0.014133 seconds 
+  Import took 0.016924 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/KriptoFX/ArcherEffects/DemoResources/Models/Scene/Barrel.asset
+  artifactKey: Guid(59b8a3d7aa1df004e83d72c0caa51372) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/DemoResources/Models/Scene/Barrel.asset using Guid(59b8a3d7aa1df004e83d72c0caa51372) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f9414cc1be38637db4582bb998440b6') in 0.009420 seconds 
+  Import took 0.011771 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/KriptoFX/ArcherEffects/Model/DragonTwist2.FBX
+  artifactKey: Guid(8126f76b1d6479b479a8e4a92befc98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/Model/DragonTwist2.FBX using Guid(8126f76b1d6479b479a8e4a92befc98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05ccb0dab0e565267925869f693cd78b') in 0.020538 seconds 
+  Import took 0.023030 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000286 seconds.
+  path: Assets/KriptoFX/ArcherEffects/DemoResources/Models/Scene/Barrack3.asset
+  artifactKey: Guid(27b06bc1955f0ad4ba93af3312a5d3fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/DemoResources/Models/Scene/Barrack3.asset using Guid(27b06bc1955f0ad4ba93af3312a5d3fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a7c1e0327782f4120792025bbd853d5') in 0.021878 seconds 
+  Import took 0.024269 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000270 seconds.
+  path: Assets/KriptoFX/ArcherEffects/DemoResources/Models/Scene/Build_fence1.asset
+  artifactKey: Guid(6ca0257da0524654cb2c5a9c05257b1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/DemoResources/Models/Scene/Build_fence1.asset using Guid(6ca0257da0524654cb2c5a9c05257b1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cf5b41056580b79f817a3600304648c') in 0.010147 seconds 
+  Import took 0.012434 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/KriptoFX/ArcherEffects/DemoResources/Models/Scene/Barrack1.asset
+  artifactKey: Guid(e67a2c1335fb98941bb8b32ad5eb732f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/DemoResources/Models/Scene/Barrack1.asset using Guid(e67a2c1335fb98941bb8b32ad5eb732f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ced19de18777691907abbf6784aefb1') in 0.022994 seconds 
+  Import took 0.025652 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000275 seconds.
+  path: Assets/KriptoFX/ArcherEffects/DemoResources/Models/Other/Bow.FBX
+  artifactKey: Guid(74dad25b1d6b2d247958d70a55373182) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/DemoResources/Models/Other/Bow.FBX using Guid(74dad25b1d6b2d247958d70a55373182) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba38622e77db238e0ba965789d2d2245') in 0.023636 seconds 
+  Import took 0.026049 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000375 seconds.
+  path: Assets/KriptoFX/ArcherEffects/Model/DemonSkined.fbx
+  artifactKey: Guid(7d48297666082dc469689062be88ef95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/Model/DemonSkined.fbx using Guid(7d48297666082dc469689062be88ef95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5c0ea381c71f35bf8db333b17aa1aab') in 0.023731 seconds 
+  Import took 0.027062 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000263 seconds.
+  path: Assets/KriptoFX/ArcherEffects/Model/Icicles.FBX
+  artifactKey: Guid(db73b395d34f50d4ca7efa8e1b8f86f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/Model/Icicles.FBX using Guid(db73b395d34f50d4ca7efa8e1b8f86f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8080acf092db21d70725966e1a385cad') in 0.036309 seconds 
+  Import took 0.039330 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/KriptoFX/ArcherEffects/DemoResources/Models/Scene/Fence_4.asset
+  artifactKey: Guid(0d1b7d7acac681e4ab6d67863cc9af3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/DemoResources/Models/Scene/Fence_4.asset using Guid(0d1b7d7acac681e4ab6d67863cc9af3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2075424512b39a429fe868ad8c82cf54') in 0.014296 seconds 
+  Import took 0.017768 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000298 seconds.
+  path: Assets/KriptoFX/ArcherEffects/DemoResources/Models/Scene/Fence_2.asset
+  artifactKey: Guid(ad3edb4ac1d36bf48a5cf328fcfb6455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/DemoResources/Models/Scene/Fence_2.asset using Guid(ad3edb4ac1d36bf48a5cf328fcfb6455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76eecf0406f7452595ac2340e612c52f') in 0.015199 seconds 
+  Import took 0.018995 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/KriptoFX/ArcherEffects/DemoResources/Models/Scene/Crane1_1.asset
+  artifactKey: Guid(5a1359491ac0fa3458ff237905b89fa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/DemoResources/Models/Scene/Crane1_1.asset using Guid(5a1359491ac0fa3458ff237905b89fa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e5604e0196ff3dc58524d85323d331f') in 0.014177 seconds 
+  Import took 0.017712 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/KriptoFX/ArcherEffects/Model/DragonTwist.FBX
+  artifactKey: Guid(a83fad88765f54f4b8c03ce4317b87d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/Model/DragonTwist.FBX using Guid(a83fad88765f54f4b8c03ce4317b87d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c69c645931f76f4c1ac723879997210') in 0.028716 seconds 
+  Import took 0.031817 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000268 seconds.
+  path: Assets/KriptoFX/ArcherEffects/DemoResources/Models/Scene/Barrack2.asset
+  artifactKey: Guid(7a480bb4ed005dc46a6bf305a0dbdc10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/DemoResources/Models/Scene/Barrack2.asset using Guid(7a480bb4ed005dc46a6bf305a0dbdc10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fcb0bdd54619537b249eb46a0df33d5') in 0.027812 seconds 
+  Import took 0.031134 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/KriptoFX/ArcherEffects/DemoResources/Models/Scene/Fence_3.asset
+  artifactKey: Guid(7922affebff1c8a4cb7c5ee3763f2ac6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/DemoResources/Models/Scene/Fence_3.asset using Guid(7922affebff1c8a4cb7c5ee3763f2ac6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d44f8715cf8c4fb3280f9ff29e31d7d') in 0.012605 seconds 
+  Import took 0.015821 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/KriptoFX/ArcherEffects/DemoResources/Models/Scene/Barrack_wall.asset
+  artifactKey: Guid(a8b8b1ebbb34aea4d8b33cbd8adb89e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/DemoResources/Models/Scene/Barrack_wall.asset using Guid(a8b8b1ebbb34aea4d8b33cbd8adb89e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fa6cd7c869bc53b7b3f86a677473bf6') in 0.022887 seconds 
+  Import took 0.026536 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/KriptoFX/ArcherEffects/DemoResources/Models/Other/Chal_Rig2.fbx
+  artifactKey: Guid(be0eefeb7cba34a46939d64c1932fd58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/DemoResources/Models/Other/Chal_Rig2.fbx using Guid(be0eefeb7cba34a46939d64c1932fd58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef856887ca59bb1951f48cd099ee1458') in 0.138503 seconds 
+  Import took 0.142924 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/KriptoFX/ArcherEffects/DemoResources/Models/Scene/Barrel_stack.asset
+  artifactKey: Guid(af0f2a294fb8fa94f9ec7022f8601dc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/DemoResources/Models/Scene/Barrel_stack.asset using Guid(af0f2a294fb8fa94f9ec7022f8601dc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e1ebd3ada4fb4b58af94186c9c8fd8b') in 0.013629 seconds 
+  Import took 0.016556 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.189640 seconds.
+  path: Assets/ATART/Character/Archer/Models/Archer.FBX
+  artifactKey: Guid(7908f1a2bde075d478e43a6e8b8277be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ATART/Character/Archer/Models/Archer.FBX using Guid(7908f1a2bde075d478e43a6e8b8277be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a66f60485eeb9b8376a3258f88f9d9d') in 0.059727 seconds 
+  Import took 0.063010 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 32.248930 seconds.
+  path: Assets/KriptoFX/ArcherEffects/Textures/Noise4.png
+  artifactKey: Guid(0934fca48dc56f349be30939eea71ea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/Textures/Noise4.png using Guid(0934fca48dc56f349be30939eea71ea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '663d8bac2e815beba68ebeb356e0279b') in 0.020611 seconds 
+  Import took 0.024429 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 72.559414 seconds.
+  path: Assets/KriptoFX/ArcherEffects/Model/DragonHead.FBX
+  artifactKey: Guid(f57fbfb8ce39d01418f99b39bb43751c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/Model/DragonHead.FBX using Guid(f57fbfb8ce39d01418f99b39bb43751c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '049b1280a385e37196aa481293fb28db') in 0.030042 seconds 
+  Import took 0.033774 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.719398 seconds.
+  path: Assets/KriptoFX/ArcherEffects/Model/DragonHeadAnim.controller
+  artifactKey: Guid(38f90b98a105f6e46b6c2c28b8098a2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/Model/DragonHeadAnim.controller using Guid(38f90b98a105f6e46b6c2c28b8098a2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6e4870f3e9b1820acb4f6e7d595bc5a') in 0.007649 seconds 
+  Import took 0.010839 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.637262 seconds.
+  path: Assets/KriptoFX/ArcherEffects/Model/DragonTwist 2.controller
+  artifactKey: Guid(4ca7ae62ff5902a4fafbf04259293791) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/Model/DragonTwist 2.controller using Guid(4ca7ae62ff5902a4fafbf04259293791) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ae042985a24ea7d27ea153b4427ce6f') in 0.005352 seconds 
+  Import took 0.008523 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 81.863480 seconds.
+  path: Assets/KriptoFX/ArcherEffects
+  artifactKey: Guid(65ca2ab1113416d4a8c4d0f060f8b2fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects using Guid(65ca2ab1113416d4a8c4d0f060f8b2fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84d97346ace044e7717972424dc7ae74') in 0.003627 seconds 
+  Import took 0.006787 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005070 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.962 seconds
+Domain Reload Profiling:
+	ReloadAssembly (963ms)
+		BeginReloadAssembly (109ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (33ms)
+		EndReloadAssembly (794ms)
+			LoadAssemblies (86ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (281ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (292ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (89ms)
+				ProcessInitializeOnLoadAttributes (182ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.44 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1552 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.6 MB.
+System memory in use after: 89.7 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2067.
+Total: 2.713800 ms (FindLiveObjects: 0.135600 ms CreateObjectMapping: 0.043200 ms MarkObjects: 2.486000 ms  DeleteObjects: 0.048100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 241.511187 seconds.
+  path: Assets/ATART/Character/Archer/Animations/Archer@BackRolling.FBX
+  artifactKey: Guid(fa057ee89fed54e4397834dace2bf8c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ATART/Character/Archer/Animations/Archer@BackRolling.FBX using Guid(fa057ee89fed54e4397834dace2bf8c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fbb3edbc25cdd0c6004385b5292e5fa') in 0.101750 seconds 
+  Import took 0.105586 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.461766 seconds.
+  path: Assets/ATART/Character/Archer/Animations/Archer@Turn_Right.FBX
+  artifactKey: Guid(496ba673150adb14ca92ceafe0cbb447) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ATART/Character/Archer/Animations/Archer@Turn_Right.FBX using Guid(496ba673150adb14ca92ceafe0cbb447) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '792dd671bb66c5b1c8856bb8ba4aad11') in 0.055240 seconds 
+  Import took 0.061294 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000350 seconds.
+  path: Assets/KriptoFX/ArcherEffects/Audio/ExplosionGhost3.ogg
+  artifactKey: Guid(bb54a921c098b76409841a123c4fa9b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/Audio/ExplosionGhost3.ogg using Guid(bb54a921c098b76409841a123c4fa9b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'daee06c71a384a1a4e9cf9cba83db44c') in 0.041404 seconds 
+  Import took 0.043722 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/KriptoFX/ArcherEffects/Audio/ExplosionLightning1.ogg
+  artifactKey: Guid(e37ea432c6478624d9fc60f9e8f6fb11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/Audio/ExplosionLightning1.ogg using Guid(e37ea432c6478624d9fc60f9e8f6fb11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad5efcb377c5f438a89b41b7964af0c9') in 0.011285 seconds 
+  Import took 0.014249 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000254 seconds.
+  path: Assets/KriptoFX/ArcherEffects/Textures/lightning6.png
+  artifactKey: Guid(ee942cceea3a23346ba36b7ef4b7ba0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/Textures/lightning6.png using Guid(ee942cceea3a23346ba36b7ef4b7ba0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e9ef83d77f3d42ff9e95400c8dee09d') in 0.014840 seconds 
+  Import took 0.018236 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/KriptoFX/ArcherEffects/Materials/Effect10/Ghost.mat
+  artifactKey: Guid(dfc28a3751f39ce4798ca72392795f1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/Materials/Effect10/Ghost.mat using Guid(dfc28a3751f39ce4798ca72392795f1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72275045f587b5dbb3441b3b353a7c53') in 0.026982 seconds 
+  Import took 0.030341 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000394 seconds.
+  path: Assets/KriptoFX/ArcherEffects/Textures/lightning5.png
+  artifactKey: Guid(2c118fea785edc4479796a2ead0eff2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/Textures/lightning5.png using Guid(2c118fea785edc4479796a2ead0eff2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c021305405020e75aa27cf7457534557') in 0.022684 seconds 
+  Import took 0.025930 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000312 seconds.
+  path: Assets/KriptoFX/ArcherEffects/Audio/LoopGhost1.ogg
+  artifactKey: Guid(c8e0b51427023a94caa92ddd51331d51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/Audio/LoopGhost1.ogg using Guid(c8e0b51427023a94caa92ddd51331d51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49fc53fabc19125da80632326be951ab') in 0.019062 seconds 
+  Import took 0.023129 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000414 seconds.
+  path: Assets/KriptoFX/ArcherEffects/Audio/InGhost1.ogg
+  artifactKey: Guid(8de6c61722ec19444ba33c151a894ff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/Audio/InGhost1.ogg using Guid(8de6c61722ec19444ba33c151a894ff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06305ae3df88010ffb1d5fb76ea4b695') in 0.013427 seconds 
+  Import took 0.016915 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000335 seconds.
+  path: Assets/KriptoFX/ArcherEffects/Textures/lightning3.png
+  artifactKey: Guid(4dcec361d7a642841bb7ca353874a644) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/Textures/lightning3.png using Guid(4dcec361d7a642841bb7ca353874a644) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf4062f9392ec057cd95bade8c6193a8') in 0.023157 seconds 
+  Import took 0.027183 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000261 seconds.
+  path: Assets/KriptoFX/ArcherEffects/Materials/Effect11/Lightning 1.mat
+  artifactKey: Guid(12d3e4e80897a22459a124b50bc4c159) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/Materials/Effect11/Lightning 1.mat using Guid(12d3e4e80897a22459a124b50bc4c159) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16eed4ef81e6bf2e120948b276f35844') in 0.016348 seconds 
+  Import took 0.019660 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/KriptoFX/ArcherEffects/Audio/LightningPostEffect.wav
+  artifactKey: Guid(e80544804c2a8a446aeb6f17e88053dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/Audio/LightningPostEffect.wav using Guid(e80544804c2a8a446aeb6f17e88053dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18a34ecc4566a6fcb383dede5ecf68be') in 0.012093 seconds 
+  Import took 0.014776 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000369 seconds.
+  path: Assets/KriptoFX/ArcherEffects/Materials/Effect4/LightningParticles.mat
+  artifactKey: Guid(0b61a473916f8a541b1a660c47e87017) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/Materials/Effect4/LightningParticles.mat using Guid(0b61a473916f8a541b1a660c47e87017) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98f29345d016a76c21b2fd00cfd98814') in 0.053100 seconds 
+  Import took 0.055782 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/KriptoFX/ArcherEffects/Materials/Effect10/BowDecalGhost.mat
+  artifactKey: Guid(63d14953cb33cb14d9ac9c2aa2508f34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/Materials/Effect10/BowDecalGhost.mat using Guid(63d14953cb33cb14d9ac9c2aa2508f34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd384a0e1f62d1d946bdff647d0c574ee') in 0.012864 seconds 
+  Import took 0.016126 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000290 seconds.
+  path: Assets/KriptoFX/ArcherEffects/Audio/LoopGhost5.ogg
+  artifactKey: Guid(2cd3e5f9d309e0c49ab5f7ee9cfcc604) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/Audio/LoopGhost5.ogg using Guid(2cd3e5f9d309e0c49ab5f7ee9cfcc604) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f4d20e862c329a5f10d0b5c608d07bf') in 0.010724 seconds 
+  Import took 0.014022 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000341 seconds.
+  path: Assets/KriptoFX/ArcherEffects/Materials/Effect7/Lightning.mat
+  artifactKey: Guid(01bb8049016fb7e43821582563d5364a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/Materials/Effect7/Lightning.mat using Guid(01bb8049016fb7e43821582563d5364a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0cecc83af5b87da37042cab545dba32') in 0.011602 seconds 
+  Import took 0.014942 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000376 seconds.
+  path: Assets/KriptoFX/ArcherEffects/Materials/Effect8/Ghost.mat
+  artifactKey: Guid(a8b404e00d7cc724a8562233ce0de694) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/Materials/Effect8/Ghost.mat using Guid(a8b404e00d7cc724a8562233ce0de694) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e54c796c53e4c8a8fab22020baa8238b') in 0.058281 seconds 
+  Import took 0.061058 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/KriptoFX/ArcherEffects/Materials/Effect11/Ghost 1.mat
+  artifactKey: Guid(6192f7faac3b8d7479df5b8b2149487c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/Materials/Effect11/Ghost 1.mat using Guid(6192f7faac3b8d7479df5b8b2149487c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dea11db301bd0f582dc5237086ef7864') in 0.016526 seconds 
+  Import took 0.019369 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/KriptoFX/ArcherEffects/Materials/Effect11/Lightning2.png
+  artifactKey: Guid(207e2bfe24c0b0940a4311971518c8e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/Materials/Effect11/Lightning2.png using Guid(207e2bfe24c0b0940a4311971518c8e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f0b0b8c52d580a245665378782dd0d9') in 0.011888 seconds 
+  Import took 0.015482 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/KriptoFX/ArcherEffects/Textures/lightning4.png
+  artifactKey: Guid(0c498944b575d884688d111e1b26caca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/Textures/lightning4.png using Guid(0c498944b575d884688d111e1b26caca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe928e3df006da8f0b0cef694db24c39') in 0.013258 seconds 
+  Import took 0.017203 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/KriptoFX/ArcherEffects/Audio/LoopGhost9.ogg
+  artifactKey: Guid(4cbd18b6e34a2d443aaa73bd90d25e48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/Audio/LoopGhost9.ogg using Guid(4cbd18b6e34a2d443aaa73bd90d25e48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8049fef923e0b8a5f4c3852f5b254b73') in 0.011138 seconds 
+  Import took 0.014586 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/KriptoFX/ArcherEffects/Audio/LoopGhost10.ogg
+  artifactKey: Guid(374e29d7e78c65e4aa1e36a8f8350533) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/Audio/LoopGhost10.ogg using Guid(374e29d7e78c65e4aa1e36a8f8350533) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fca3e7c062df99c062f7f09b0a1b78a') in 0.011474 seconds 
+  Import took 0.015690 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.772993 seconds.
+  path: Assets/KriptoFX/ArcherEffects/Textures
+  artifactKey: Guid(b72f5d8cd8c55624eb656baa5a7d84f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/Textures using Guid(b72f5d8cd8c55624eb656baa5a7d84f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc7d40a0ae64f1458337e806db18af36') in 0.003684 seconds 
+  Import took 0.006707 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.965074 seconds.
+  path: Assets/KriptoFX/ArcherEffects/Shaders
+  artifactKey: Guid(7e5fd8b3a31459840bd842d4ad2cc456) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/Shaders using Guid(7e5fd8b3a31459840bd842d4ad2cc456) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b17bf08b2b3ed6864607eff8006dd6d') in 0.003864 seconds 
+  Import took 0.006762 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005546 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.42 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.970 seconds
+Domain Reload Profiling:
+	ReloadAssembly (971ms)
+		BeginReloadAssembly (102ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (33ms)
+		EndReloadAssembly (812ms)
+			LoadAssemblies (81ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (278ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (36ms)
+			SetupLoadedEditorAssemblies (308ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (91ms)
+				ProcessInitializeOnLoadAttributes (197ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.42 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1551 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 90.1 MB.
+System memory in use after: 90.2 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2072.
+Total: 2.507700 ms (FindLiveObjects: 0.132700 ms CreateObjectMapping: 0.041200 ms MarkObjects: 2.303000 ms  DeleteObjects: 0.030200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1732.948314 seconds.
+  path: Assets/KriptoFX/ArcherEffects/Materials/Effect10/Trails2.mat
+  artifactKey: Guid(40035979229eeaa4b8fb9bd3fd0f8eac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KriptoFX/ArcherEffects/Materials/Effect10/Trails2.mat using Guid(40035979229eeaa4b8fb9bd3fd0f8eac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '102b6a3e14e5061b9151afff37c91a0c') in 0.080816 seconds 
+  Import took 0.085172 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005178 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.55 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.021 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1021ms)
+		BeginReloadAssembly (100ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (858ms)
+			LoadAssemblies (84ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (339ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (286ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (76ms)
+				ProcessInitializeOnLoadAttributes (188ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.44 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1551 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 90.1 MB.
+System memory in use after: 90.2 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2075.
+Total: 2.558600 ms (FindLiveObjects: 0.155300 ms CreateObjectMapping: 0.077600 ms MarkObjects: 2.311200 ms  DeleteObjects: 0.013800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

@@ -9,6 +9,7 @@ public class TestSkillCD : MonoBehaviour
     public Image img;
     public Text cd;
     public GameObject cdText;
+    public KeyCode GetInputBtn;
     private bool isCoolDown = false;
     public float cooldownTime = 10f;
     private float cooldownTimer = 2f;
@@ -33,7 +34,7 @@ public class TestSkillCD : MonoBehaviour
         }
 
 
-        if (Input.GetKeyDown(KeyCode.Alpha1)) 
+        if (Input.GetKeyDown(GetInputBtn)) 
         {
             UseSpell();
         }

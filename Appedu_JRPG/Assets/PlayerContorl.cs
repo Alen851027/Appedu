@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class PlayerContorl : MonoBehaviour
 {
+    public static PlayerContorl instance;
+    private void Awake()
+    {
+        instance = this;
+    }
+
     public Animator animator;
     public float velocity = 0.0f;
     public float acceleration = 0.1f;
@@ -11,6 +17,7 @@ public class PlayerContorl : MonoBehaviour
     int VelocityHash;
     int VelocutyX;
     public float LRvelocity;
+    public bool isWalk;
 
     [SerializeField]
     private Camera _followCamera;
@@ -39,10 +46,11 @@ public class PlayerContorl : MonoBehaviour
     }
     public void PlayerAnimatorControl() 
     {
-        bool MoveInput = Input.GetKey(KeyCode.W)|| Input.GetKey(KeyCode.A)||Input.GetKey(KeyCode.S)|| Input.GetKey(KeyCode.D);
-
+        
+        isWalk = Input.GetKey(KeyCode.W)|| Input.GetKey(KeyCode.A)||Input.GetKey(KeyCode.S)|| Input.GetKey(KeyCode.D);
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)|| Input.GetKey(KeyCode.S)|| Input.GetKey(KeyCode.W))
         {
+            isWalk = true;
             Debug.Log("A");
             animator.SetInteger("Move", 1);//¥ª¥k²¾°Ê = 1
         }
@@ -54,18 +62,18 @@ public class PlayerContorl : MonoBehaviour
 
         #region ²¾°Ê
         {
-            if (MoveInput && velocity < 1.0f)
+            if (isWalk && velocity < 1.0f)
             {
                 animator.SetBool("IsWalk", true);
                 Debug.Log("WWWWW");
                 velocity += Time.deltaTime * acceleration;
             }
-            if (!MoveInput && velocity > 0.0f)
+            if (!isWalk && velocity > 0.0f)
             {
 
                 velocity -= Time.deltaTime * deceleration;
             }
-            if (!MoveInput && velocity < 0.0f)
+            if (!isWalk && velocity < 0.0f)
             {
                 animator.SetBool("IsWalk", false);
                 velocity = 0.0f;
@@ -80,6 +88,7 @@ public class PlayerContorl : MonoBehaviour
 
     public void Movement() 
     {
+
         _groundedPlayer = true;
         if (_groundedPlayer && _playerVelocity.y < 0)
         {
