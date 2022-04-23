@@ -76,7 +76,7 @@ public class TestSkillCD : MonoBehaviour
             {
                 //StopAllCoroutines();
                 UseSpell(i);
-                Clicked_BTN(i);
+                //Clicked_BTN(i);
             }
             
         }
@@ -127,7 +127,7 @@ public class TestSkillCD : MonoBehaviour
                 skillTemplates[x].isCoolDown = true;
                 skillTemplates[x].cd.gameObject.SetActive(true);
                 skillTemplates[x].CooldownTimer = skillTemplates[x].CooldownTime;
-
+                Clicked_BTN(x);
                 //return true;
             }
         }
@@ -146,7 +146,7 @@ public class TestSkillCD : MonoBehaviour
     {
         yield return new WaitForSeconds(skillTemplates[x].ShowTime);
         //Btn7_GameObj.SetActive(false);
-        skillTemplates[x].SkillObjects[0].SetActive(false);
+        skillTemplates[6].SkillObjects[0].SetActive(false);
         StopAllCoroutines();
     }
     public void Clicked_BTN(int x) 
