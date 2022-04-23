@@ -15,7 +15,7 @@ public class TestSkillCD : MonoBehaviour
     //private bool isCoolDown = false;
     //public float cooldownTime = 10f;
     //private float cooldownTimer = 2f;
-
+    public bool isCD;
     [SerializeField]
     private List<SkillTemplate> skillTemplates;
 
@@ -38,7 +38,7 @@ public class TestSkillCD : MonoBehaviour
         public float ShowTime;
         public Button Skill;
         public List<GameObject> SkillObjects;
-
+        public List<Animator> Animation;
 
     }
 
@@ -71,14 +71,16 @@ public class TestSkillCD : MonoBehaviour
 
                 ApplyCooldown(i);
             }
-
-            if (Input.GetKeyDown(skillTemplates[i].GetInputBtn)) 
-            {
-                //StopAllCoroutines();
-                UseSpell(i);
-                //Clicked_BTN(i);
-            }
             
+            if (Input.GetKeyDown(skillTemplates[i].GetInputBtn)) 
+            { 
+               
+                    //StopAllCoroutines();
+                    UseSpell(i);
+                    //Clicked_BTN(i);
+
+            }
+
         }
         ////Btn7.onClick.AddListener(() => Clicked_BTN7());
         //for (int i = 0; i < skillTemplates.Count; i++)
@@ -101,7 +103,6 @@ public class TestSkillCD : MonoBehaviour
                 skillTemplates[x].cd.gameObject.SetActive(false);
                 skillTemplates[x].img.fillAmount = 0f;
 
-
             }
             else
             {
@@ -115,22 +116,28 @@ public class TestSkillCD : MonoBehaviour
 
     public void UseSpell(int x)
     {
-        //for (int i = 0; i < skillTemplates.Count; i++)
-        {
+      
+            //for (int i = 0; i < skillTemplates.Count; i++)
+            {
             if (skillTemplates[x].isCoolDown)
             {
+                    //return false;
 
-                //return false;
             }
             else
             {
                 skillTemplates[x].isCoolDown = true;
                 skillTemplates[x].cd.gameObject.SetActive(true);
                 skillTemplates[x].CooldownTimer = skillTemplates[x].CooldownTime;
-                Clicked_BTN(x);
+                skillTemplates[x].Animation[0].Play("SkillBtn7");
+                PlayerContorl.instance.isPlayAnim = 1;
+                if (isCD == false)
+                {
+                    Clicked_BTN(x);
                 //return true;
+                }
             }
-        }
+    }
 
     }
 
@@ -144,7 +151,17 @@ public class TestSkillCD : MonoBehaviour
 
     IEnumerator Btn_Skill(int x) 
     {
+        //PlayerContorl.instance.isPlayAnim = true;
+        //PlayerContorl.instance.isPlayAnim = true;
+        //if (PlayerContorl.instance.animatorinfo.IsName("Move"))
+        //{
+        //    PlayerContorl.instance.isPlayAnim = false;
+        //}
+
+        //PlayerContorl.instance.isPlayAnim = 1;
+
         yield return new WaitForSeconds(skillTemplates[x].ShowTime);
+
         //Btn7_GameObj.SetActive(false);
         skillTemplates[6].SkillObjects[0].SetActive(false);
         StopAllCoroutines();
