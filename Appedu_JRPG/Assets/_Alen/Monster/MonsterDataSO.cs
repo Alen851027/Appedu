@@ -29,6 +29,11 @@ namespace Monster
 
 
 
+        [Header("°lÂÜ½d³ò")]
+        public float rangeTrack;
+        [Header("§ğÀ»½d³ò")]
+        public float rangeAttack;
+
         [Header("©Çª«±¼¸¨"), Space(25)]
         public int Monster_Item;
         [Header("©Çª«±¼¸¨¾÷²v")]

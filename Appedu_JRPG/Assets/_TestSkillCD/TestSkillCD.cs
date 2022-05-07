@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class TestSkillCD : MonoBehaviour
 {
+    Coroutine coroutineBtn;
     //private float WaitTime;
     //public Button btn;
     //public Image img;
@@ -27,6 +28,7 @@ public class TestSkillCD : MonoBehaviour
     [System.Serializable]
     public class SkillTemplate
     {
+        
         public Text cd;
         public GameObject cdText;
         public Image img;
@@ -39,7 +41,7 @@ public class TestSkillCD : MonoBehaviour
         public Button Skill;
         public List<GameObject> SkillObjects;
         public List<Animator> Animation;
-
+        public int BtnNumber;
     }
 
     // Start is called before the first frame update
@@ -49,13 +51,14 @@ public class TestSkillCD : MonoBehaviour
         {
            skillTemplates[i].cd.gameObject.SetActive(false);
            skillTemplates[i].img.fillAmount = 0f;
-        }
+           
 
+        }
 
     }
 
     // Update is called once per frame
-    void  Update()
+    void  LateUpdate()
     {
 
 
@@ -71,17 +74,26 @@ public class TestSkillCD : MonoBehaviour
 
                 ApplyCooldown(i);
             }
-            
-            if (Input.GetKeyDown(skillTemplates[i].GetInputBtn)) 
-            { 
-               
-                    //StopAllCoroutines();
-                    UseSpell(i);
-                    //Clicked_BTN(i);
-
+            if (Input.GetKeyDown(skillTemplates[i].GetInputBtn))
+            {
+                UseSpell(i);
             }
 
+
         }
+        foreach (var item in skillTemplates)
+        {
+            //if (Input.GetKeyDown(skillTemplates[i].GetInputBtn))
+            //{
+
+            //    //StopAllCoroutines();
+            //    UseSpell(i);
+            //    //Clicked_BTN(i);
+
+            //}
+
+        }
+
         ////Btn7.onClick.AddListener(() => Clicked_BTN7());
         //for (int i = 0; i < skillTemplates.Count; i++)
         //{
@@ -118,35 +130,26 @@ public class TestSkillCD : MonoBehaviour
     {
       
             //for (int i = 0; i < skillTemplates.Count; i++)
-            {
+        {
             if (skillTemplates[x].isCoolDown)
             {
-                    //return false;
-
+                //return false;
             }
             else
             {
                 skillTemplates[x].isCoolDown = true;
                 skillTemplates[x].cd.gameObject.SetActive(true);
                 skillTemplates[x].CooldownTimer = skillTemplates[x].CooldownTime;
-                skillTemplates[x].Animation[0].Play("SkillBtn7");
-                PlayerContorl.instance.isPlayAnim = 1;
-                if (isCD == false)
-                {
-                    Clicked_BTN(x);
+                //if (isCD == false)
+                //{
+                Clicked_BTN(x);
                 //return true;
-                }
+                //}
             }
-    }
+        }
 
     }
 
-    public void Clicked()
-    {
-
-
-            
-    }
 
 
     IEnumerator Btn_Skill(int x) 
@@ -161,10 +164,14 @@ public class TestSkillCD : MonoBehaviour
         //PlayerContorl.instance.isPlayAnim = 1;
 
         yield return new WaitForSeconds(skillTemplates[x].ShowTime);
-
+        skillTemplates[x].BtnNumber = x;
+        Debug.LogError(skillTemplates[x].BtnNumber);
+        skillTemplates[x].SkillObjects[0].SetActive(false);
+        skillTemplates[x].SkillObjects[1].SetActive(true);
         //Btn7_GameObj.SetActive(false);
-        skillTemplates[6].SkillObjects[0].SetActive(false);
-        StopAllCoroutines();
+        //skillTemplates[6].SkillObjects[0].SetActive(false);
+        StopCoroutine(coroutineBtn);
+        //StopAllCoroutines();
     }
     public void Clicked_BTN(int x) 
     {
@@ -174,25 +181,82 @@ public class TestSkillCD : MonoBehaviour
         switch (x)
         {
             case 0:
+                if (skillTemplates[x].BtnNumber == 0)
+                {
+                    PlayerContorl.instance.isPlayAnim = 1;
+                    skillTemplates[x].Animation[0].Play("SkillBtn1");
+                    skillTemplates[x].BtnNumber = -1;
+                    skillTemplates[x].SkillObjects[0].SetActive(true);
+                    skillTemplates[x].SkillObjects[1].SetActive(false);
+                    StartCoroutine(Btn_Skill(x));
+                }
                 break;
 
             case 1:
-
+                if (skillTemplates[x].BtnNumber == 1)
+                {
+                    PlayerContorl.instance.isPlayAnim = 1;
+                    skillTemplates[x].Animation[0].Play("SkillBtn2");
+                    skillTemplates[x].BtnNumber = -1;
+                    skillTemplates[x].SkillObjects[0].SetActive(true);
+                    skillTemplates[x].SkillObjects[1].SetActive(false);
+                    StartCoroutine(Btn_Skill(x));
+                }
                 break;
             case 2:
-
+                if (skillTemplates[x].BtnNumber == 2)
+                {
+                    PlayerContorl.instance.isPlayAnim = 1;
+                    skillTemplates[x].Animation[0].Play("SkillBtn3");
+                    skillTemplates[x].BtnNumber = -1;
+                    skillTemplates[x].SkillObjects[0].SetActive(true);
+                    skillTemplates[x].SkillObjects[1].SetActive(false);
+                    StartCoroutine(Btn_Skill(x));
+                }
                 break;
             case 3:
-
+                if (skillTemplates[x].BtnNumber == 3)
+                {
+                    PlayerContorl.instance.isPlayAnim = 1;
+                    skillTemplates[x].Animation[0].Play("SkillBtn4");
+                    skillTemplates[x].BtnNumber = -1;
+                    skillTemplates[x].SkillObjects[0].SetActive(true);
+                    skillTemplates[x].SkillObjects[1].SetActive(false);
+                    StartCoroutine(Btn_Skill(x));
+                }
                 break;
             case 4:
-
+                if (skillTemplates[x].BtnNumber == 4)
+                {
+                    PlayerContorl.instance.isPlayAnim = 1;
+                    skillTemplates[x].Animation[0].Play("SkillBtn5");
+                    skillTemplates[x].BtnNumber = -1;
+                    skillTemplates[x].SkillObjects[0].SetActive(true);
+                    skillTemplates[x].SkillObjects[1].SetActive(false);
+                    StartCoroutine(Btn_Skill(x));
+                }
                 break;
             case 5:
-
+                if (skillTemplates[x].BtnNumber == 5)
+                {
+                    PlayerContorl.instance.isPlayAnim = 1;
+                    skillTemplates[x].Animation[0].Play("SkillBtn6");
+                    skillTemplates[x].BtnNumber = -1;
+                    skillTemplates[x].SkillObjects[0].SetActive(true);
+                    skillTemplates[x].SkillObjects[1].SetActive(false);
+                    StartCoroutine(Btn_Skill(x));
+                }
                 break;
             case 6:
-                skillTemplates[x].SkillObjects[0].SetActive(true);
+                if (skillTemplates[x].BtnNumber==6) 
+                { 
+                    PlayerContorl.instance.isPlayAnim = 1;
+                    skillTemplates[x].Animation[0].Play("SkillBtn7");
+                    skillTemplates[x].BtnNumber =-1;
+                    skillTemplates[x].SkillObjects[0].SetActive(true);
+                    skillTemplates[x].SkillObjects[1].SetActive(false);
+                    StartCoroutine(Btn_Skill(x));
+                }
 
                 break;
             default:
@@ -200,7 +264,7 @@ public class TestSkillCD : MonoBehaviour
         }
 
         //Btn7_GameObj.SetActive(true);
-        StartCoroutine(Btn_Skill(x));
+        //StartCoroutine(Btn_Skill(x));
     }
 
 }

@@ -31,7 +31,7 @@ public class PlayerContorl : MonoBehaviour
     private float playerSpeed = 2f;
     private float jumpHeight = 1f;
     private float _gravityValue = -9.8f;
-    public int isPlayAnim =0;
+    public int isPlayAnim =-1;
     private float PlayerSpeed = 5f;
     private CharacterController _controller;
     // Start is called before the first frame update

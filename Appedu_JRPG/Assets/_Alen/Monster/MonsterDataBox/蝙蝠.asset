@@ -15,5 +15,11 @@ MonoBehaviour:
   Monster_Hp: 0
   Monster_Atk: 0
   Monster_Def: 0
-  Monster_Exp: 0
   Monster_Critical: 0
+  Monster_Exp: 0
+  Monster_Coin: {fileID: 0}
+  Monster_CoinCount: 0
+  rangeTrack: 3
+  rangeAttack: 1.84
+  Monster_Item: 0
+  Monster_ItemProbability: 0
